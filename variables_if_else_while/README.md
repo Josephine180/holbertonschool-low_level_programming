@@ -1,0 +1,1 @@
+on decouvre les variables
