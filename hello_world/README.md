@@ -1,0 +1,1 @@
+On test le premier exercice en C
