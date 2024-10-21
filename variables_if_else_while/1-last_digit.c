@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+/**
+ * main - main
+ *
+ * Return: osef
+ */
 int main(void)
 {
 int n;
