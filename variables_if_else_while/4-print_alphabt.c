@@ -14,12 +14,11 @@ for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 putchar(alphabet);
  if (alphabet == 'd')
    alphabet++
+     putchar(alphabet);
 }
 {
-if (alphabet =='p')
+If (alphabet =='p')
 alphabet++
-}
-{
 putchar(alphabet);
 }
 putchar('\n');
