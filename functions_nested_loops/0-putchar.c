@@ -12,6 +12,6 @@
 
 int main(void)
 {
-  write(1, "_putchar",8); 
+  write(1, "_putchar\n",8); 
   return (0);
 }
