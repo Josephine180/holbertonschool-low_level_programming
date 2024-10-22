@@ -1,0 +1,1 @@
+On utilise les fonctions en C 
