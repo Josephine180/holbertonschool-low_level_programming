@@ -3,7 +3,7 @@
 /**
 * main - main
 *
-* Return: osef 
+* Return: osef
 */
 
 int main(void)
