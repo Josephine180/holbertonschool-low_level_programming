@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+* main - main
+*
+* Return: osef
+*/
+
+int main(void)
+  int i;
+{ char alphabet []
