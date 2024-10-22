@@ -14,9 +14,9 @@ int main(void)
     {
       putchar(alphabet);
       if (alphabet == 'd')
-	alphabet++
+	alphabet++;
       if(alphabet =='p')
-alphabet++
+	alphabet++;
 }
 putchar('\n');
 return (0);
