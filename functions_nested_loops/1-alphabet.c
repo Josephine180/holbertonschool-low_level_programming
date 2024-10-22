@@ -5,8 +5,8 @@
 /**
 * main - writes the character c to stdout
 *
-*
-* Return: On success 1.
+* Description: osef
+* Return: On success 1
 */
 
 void print_alphabet(void)
