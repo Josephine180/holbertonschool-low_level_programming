@@ -10,7 +10,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(void)
+int main(void)
 {
   write(1, "_putchar",7); 
   return (0);
