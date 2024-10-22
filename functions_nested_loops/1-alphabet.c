@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* main - writes the character c to stdout
+* print_alphabet - writes the character c to stdout
 *
 * Description: osef
 * Return: On success 1
