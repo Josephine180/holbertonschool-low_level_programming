@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <FILENAME>
 
 /**
  * print_sign - check the code
