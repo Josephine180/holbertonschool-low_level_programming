@@ -26,7 +26,6 @@ result = i * j;
    }
  else
    {
-     _putchar(' ');
      _putchar((result / 10) + '0');
      _putchar((result % 10) + '0');
    }
@@ -35,7 +34,4 @@ result = i * j;
      _putchar(',');
      _putchar(' ');
    }
- }
- _putchar('\n');
- }
 }
