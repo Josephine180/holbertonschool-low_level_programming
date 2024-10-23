@@ -10,9 +10,12 @@
 * 0 if n = 0 or -1 if less than 0.
 */
 
-int _abs(int)
+int _abs(int n)
 {
-  int abs(int);
-  return (0);
+  if (n < 0)
+    { return (-n);
+    }
+  
+  return (n);
 }
  
