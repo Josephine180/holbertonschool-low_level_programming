@@ -37,3 +37,4 @@ result = j * i;
  }
  _putchar('\n');
  }
+}
