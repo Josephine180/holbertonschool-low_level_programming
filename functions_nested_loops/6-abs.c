@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* print_sign - check the code
+* _abs - check the code
 * @n: The number to test
 *
 * Return: 1 if n is greater than 0
