@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
-* int -islower(int c) - main
-* Description : description
+* -islower - check
+* @c : caractere check
+*
 * Return: success
 */
 
