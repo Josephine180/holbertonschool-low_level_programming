@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* -islower - check
+* _islower - check
 * @c : caractere check
 * Description : osef
 * Return: success
