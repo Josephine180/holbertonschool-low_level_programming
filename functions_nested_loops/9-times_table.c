@@ -18,12 +18,12 @@ for (i=0; i <= 9; i++)
 result = 9*i ;
 if ( i==0 )
 {
-printf("%d", result);
+_putchar("%d", result);
 }
 else
 {
-printf(", %d", result);
+_putchar(", %d", result);
 }
 }
-printf("\n");
+_putchar("\n");
 }
