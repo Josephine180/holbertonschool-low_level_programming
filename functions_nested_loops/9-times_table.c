@@ -8,33 +8,32 @@
 * 
 */
 
+#include "main.h"
+/**
+ * times_table - check the code
+ *
+ * Return: nothing
+ */
 void times_table(void)
 {
-int i;
-int result;
-int j;
- 
-for (i=0; i <= 9; i++)
-{
-for (j = 0; j <= 9; j++)
-{    
- if (i *j > 9)
-   {
-     _putchar(i * j / 10 + '0');
-    
-     else if ( j > 0 )
-   {
-     _putchar(' ');
-     _putchar(i * j % 10 + '0');
-   }
- if (j < 9)
-   {
-     _putchar(',');
-     _putchar(' ');
-   }
-   }
-   _putchar('\n');
-   }
- }
+        int col, line;
+        for (line = 0; line <= 9; line++)
+        {
+                for (col = 0; col <= 9; col++)
+                {
+                        if (col * line > 9)
+                                _putchar(col * line / 10 + '0');
+                        else if (col > 0)
+                                _putchar(' ');
+                        _putchar(col * line % 10 + '0');
+                        if (col < 9)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
+                }
+                _putchar('\n');
+        }
+}
 
 
