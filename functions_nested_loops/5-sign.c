@@ -2,9 +2,9 @@
 #include "main.h"
 #include <stdlib.h>
 
-/** 
+/**
 * print_sign - check
-* @c : caractere check
+* @n : caractere check
 * Description : osef
 * Return: success
 */
