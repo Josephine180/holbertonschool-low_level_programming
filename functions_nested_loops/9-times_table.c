@@ -4,7 +4,7 @@
 /**
 * times_table - check the code
 *
-* Return: nothing 
+* Return: nothing
 */
 
 void times_table(void)
