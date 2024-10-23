@@ -15,12 +15,12 @@ int print_last_digit(int n)
 int last_digit;
 char digit_char;
   
-int last_digit = n % 10;
+last_digit = n % 10;
  if (last_digit < 0)
         {
 	  last_digit = -last_digit;
         }
- char digit_char = last_digit + '0';
+ digit_char = last_digit + '0';
  write(1, &digit_char, 1);
  return (last_digit);
 }
