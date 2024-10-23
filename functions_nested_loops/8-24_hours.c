@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_sign - check the code
+* jack_bauer - check the code
 * @n: The number to test
 *
 * Return: 1 if n is greater than 0
