@@ -23,7 +23,7 @@ int result;
        }
      else
        {
-	 printf (",%d"; result);
+	 printf(",%d"; result);
        }
    }
  printf("\n");
