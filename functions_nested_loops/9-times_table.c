@@ -15,15 +15,16 @@ int result;
 
 for (i=0; i <= 9; i++)
 {
-result = 9*i ;
-if ( i==0 )
+result = 9*i;
+ if (i == 0)
 {
-_putchar("%d", result);
+_putchar(result);
 }
 else
 {
-_putchar(", %d", result);
+  _putchar(',');
+  _putchar(result);
 }
 }
-_putchar("\n");
+_putchar('\n');
 }
