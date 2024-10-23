@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* int -islower(int c) - main
+* int _islower(int c) - main
 * Description : description
 * Return: success
 */
