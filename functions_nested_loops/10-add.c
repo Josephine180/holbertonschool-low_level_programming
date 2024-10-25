@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
-* main - main
-*
-* Return : 0
+* add - addition
+* Return : resultat de l'addition
 *
 */
 
