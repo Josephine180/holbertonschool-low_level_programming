@@ -6,7 +6,7 @@
 * @a : premier chiffre
 * @b : deuxieme chiffre
 *
-* Return : resultat de l'addition
+* Return: resultat de l'addition
 *
 */
 
