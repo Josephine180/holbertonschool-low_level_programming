@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_to_98: print number from n to 98
+* print_to_98 - print number from n to 98
 * @n: number
 */
 
