@@ -3,7 +3,7 @@
 
 /**
 *
-* print_to_98 : print number from n to 98
+* print_to_98: print number from n to 98
 * @n: number
 * Description: la fonction montre les numeros jusqu'a 98
 *
