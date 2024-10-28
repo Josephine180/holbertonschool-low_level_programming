@@ -8,7 +8,7 @@
 * Return: 1 si c est en majuscule
 */
 
-int _isupper(int c);
+int _isupper(int c)
 {
 if( c >= 'A' && c <= 'Z' )
 {
