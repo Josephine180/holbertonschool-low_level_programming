@@ -13,9 +13,9 @@ void print_numbers()
 int i;
 for ( i = '0'; i <= '9'; i ++ )
 {
-putchar(i);
+_putchar(i);
 }
 {
-putchar('\n');
+_putchar('\n');
 }
 }
