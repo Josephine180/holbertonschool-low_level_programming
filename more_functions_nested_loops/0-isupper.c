@@ -8,10 +8,10 @@
 * Return: 1 si c est en majuscule
 */
 
-int _isuupper(int c);
-if ( i = [' A-Z'])
+int _isupper(int c);
+if( i = [' A-Z'])
 {
-  _putchar('1);
+  _putchar('1');
 }
 else
 {
