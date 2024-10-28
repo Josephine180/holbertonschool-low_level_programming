@@ -9,15 +9,15 @@
 */
 
   void more_numbers(void) {
-    for(int count = 0; count < 10; count++) { // Loop to print 10 times
-        for(int i = 0; i <= 14; i++) {         // Loop from 0 to 14
+    for(int count = 0; count < 10; count++) { 
+        for(int i = 0; i <= 14; i++) {         
             if (i >= 10) {
-                _putchar('1');                   // Print '1' for numbers 10 to 14
-                _putchar(i % 10 + '0');         // Print the units digit
+                _putchar('1');
+                _putchar(i % 10 + '0');
             } else {
-                _putchar(i + '0');               // Print single digit numbers
+                _putchar(i + '0');
             }
 }
-_putchar('\n'); // Print a newline after each set
+_putchar('\n');
 }
 }
