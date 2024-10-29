@@ -3,7 +3,7 @@
 
 /**
 * print_diagonal - faire une ligne de \
-* @n : caractere
+* @n: caractere
 * Result : n inferieur a 0 = '\n'
 */
 
