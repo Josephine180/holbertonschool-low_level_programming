@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
-* print_diagonal - faire une ligne de \
-* @n: the number of times to print backslash
-* Description: n is 0 or less, it prints only a newline
-* return: nothing
+* print_diagonal - oui
+* @n: num
+* Return: restult
 */
 
 void print_diagonal(int n)
