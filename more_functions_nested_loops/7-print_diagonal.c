@@ -3,7 +3,8 @@
 
 /**
 * print_diagonal - faire une ligne de \
-* @n: num
+* @n: the number of times to print backslash
+* Description: n is 0 or less, it prints only a newline
 * return: nothing
 */
 
