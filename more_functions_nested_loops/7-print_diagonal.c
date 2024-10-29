@@ -3,11 +3,11 @@
 
 /**
 * print_diagonal - faire une ligne de \
-* @n: caractere
+* @n: num
 * Result: n inferieur a 0 = '\n'
 */
 
-void print_diagonal (int n)
+void print_diagonal(int n)
 {
 int i;
 int j;
