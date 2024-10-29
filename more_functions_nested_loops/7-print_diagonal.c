@@ -7,7 +7,7 @@
 * Result: n inferieur a 0 = '\n'
 */
 
-void print_diagonal(int n)
+void print_diagonal (int n)
 {
 int i;
 int j;
