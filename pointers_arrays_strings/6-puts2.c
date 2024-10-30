@@ -12,7 +12,7 @@ void puts2(char *str)
   int i;
 if (str == NULL)
 return;
- for (len = 0; str[len] != '\0'; len++)
+ for (i = 0; str[i] != '\0'; i += 2)
 {
   if (str[i] != 'H' && i != 0)
     {
