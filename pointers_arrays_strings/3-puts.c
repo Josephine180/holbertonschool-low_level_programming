@@ -13,7 +13,7 @@ if (str == NULL)
 return;
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
 printf("\n");
