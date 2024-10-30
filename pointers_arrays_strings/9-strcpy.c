@@ -7,18 +7,22 @@
 * 
 * Result: string
 */
-
-char *_strcpy(char *dest, char *src);
+/*
+char *_strcpy(char *dest, char *src)
 {
   {
-    *ptr = dest;
-while (*src != '0')
-{
-*dest = *src;
+  char *ptr = dest;
+  while (*dest = *src)
 dest++;
 src++;
 }
-  }
 *dest = '\0';
-return ptr;
+ return(ptr);
+}
+*/
+
+char *_strcpy(char *dest, const char *src) {
+    char *ptr = dest; 
+    while ((*ptr++ = *src++));
+    return dest;
 }
