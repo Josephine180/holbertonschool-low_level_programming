@@ -7,7 +7,7 @@
 * @dest: pointeur
 * @src: pointeur
 * Result: string
-* Return: strcpy
+* 
 */                                                                                                                                          
 char *_strcpy(char *dest, const char *src)
 {
