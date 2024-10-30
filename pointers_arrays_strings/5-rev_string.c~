@@ -1,0 +1,36 @@
+File Edit Options Buffers Tools C Help                                                                                                                                                                                                                                 
+#include <stdio.h>
+#include "main.h"
+/**
+* print_rev - print in reverse 
+* @s : caractere a pointer
+* Result : print in reverse
+*/
+
+void print_rev(char *s)
+{if (s == NULL)  // Check for NULL input
+        return;
+
+    int length = 0;
+    // Calculate the length of the string
+    while (*(s + length) != '\0') {
+        length++;
+    }
+
+    int first = 0;           // Pointer to the first character
+    int last = length - 1;   // Pointer to the last character
+    char temp;               // Temporary variable for swapping
+
+    // Swap characters until the two pointers meet
+    while (first < last) {
+        // Swap characters
+        temp = *(s + first);
+        *(s + first) = *(s + last);
+        *(s + last) = temp;
+
+        // Move pointers towards each other
+        first++;
+        last--;
+    }
+}
+}
