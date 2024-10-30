@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
    /* declaration variable temporaire de stockage */
-  char *ptr = s; /* creation d'un deuxieme pointeur de la meme valeur que le premier*/
+  ;char *ptr = s; /* creation d'un deuxieme pointeur de la meme valeur que le premier*/
   while(*ptr) /* creation boucle*/
     ptr++; /* le pointeur 2 va a la fin de la string*/
   ptr--; /* decrementer pour avoir le dernier caractere de la string*/
