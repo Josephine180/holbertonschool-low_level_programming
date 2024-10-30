@@ -8,14 +8,14 @@
 */
 
 void print_rev(char *s)
-{ 
+{
 char *ptr = s;
-while(*ptr)
+while (*ptr)
 {
 ptr++;
 }
 ptr--;
-while(ptr >= s)
+while (ptr >= s)
 {
 _putchar(*ptr--);
 }
