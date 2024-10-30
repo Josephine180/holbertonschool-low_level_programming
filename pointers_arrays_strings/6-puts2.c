@@ -14,7 +14,7 @@ if (str == NULL)
 return;
  for (i = 0; str[i] != '\0'; i += 2)
 {
-  if (str[i] != 'H' && i != 0)
+  if (str[i] == 'H' && i != 0)
     {
       _putchar('\n');
       return;
