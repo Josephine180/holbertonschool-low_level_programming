@@ -22,8 +22,8 @@ if (s[j] >= '0' && s[j] <= '9')
 {
 verif = 1;
 num = num * 10 + s[j] - '0';
- if (num > 2147483647)
-   return ((sign == 1) ? 2147483647 : - 2147483647);
+if (num > 2147483647)
+   return ((sign == 1) ? 2147483647 : -2147483647);
  }
 else if (verif == 1)
 break;
