@@ -39,7 +39,7 @@ i++;
 }
 if (!found_digit)
 return (0);
-return (sign * num);
+return (sign *num);
 }
 
 
