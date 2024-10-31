@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-int _atoi(char *s)
-{
 #include "main.h"
 
 /**
@@ -44,10 +41,6 @@ if (!found_digit)
 return (0);
 return (sign * num);
 }
-
-
-
-
 
 
 
