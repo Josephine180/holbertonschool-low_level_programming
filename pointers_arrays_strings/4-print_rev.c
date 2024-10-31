@@ -11,6 +11,7 @@ void print_rev(char *s)
 {
 char *ptr = s;
 while (*ptr)
+  /*paraenthese donc !=\'@' sous eentendu*/
 {
 ptr++;
 }

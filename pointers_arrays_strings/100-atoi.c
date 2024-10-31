@@ -2,35 +2,33 @@
 
 int _atoi(char *s)
 {
-int sign = 1; 
-unsigned int number = 0;    
-unsigned int limit = 2147483647;
-while (*s)
+int sign = 1;
+int num, i, j, verif;
+verif = 0;
+for (i = 0; s[i] != '\0'; i++)
 {
-if (*s == ' ')
-{
-s++;
-continue;
+if (s[i] >= '0' && s[i] <= '9')
+verif = 1;
+else if (verif == 1)
+break;
+if (s[i] == '-')
+sign = sign * -1;
 }
-if (*s == '-')
+verif = 0;
+num = 0;
+for (j = 0; s[j] != '\0'; j++)
 {
-sign = -1;
-s++;
-}
-else if (*s == '+')
+if (s[j] >= '0' && s[j] <= '9')
 {
-s++;
+verif = 1;
+num = num * 10 + s[j] - '0';
 }
-while (*s >= '0' && *s <= '9')
-{
-if (number > (limit - (*s - '0')) / 10)
-{
-return (sign == 1) ? 2147483647 : -2147483648;
-}
-number = number * 10 + (*s - '0');
-s++;
-}
+else if (verif == 1)
 break;
 }
-return sign * number;
+return (num * sign);
 }
+
+
+
+
