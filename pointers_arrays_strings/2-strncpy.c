@@ -14,28 +14,18 @@ char *_strncpy(char *dest, char *src, int n)
 {
 char  *ptr;
 ptr = dest;
-/* marquer debut de dest */
-while (*dest != '\0')
-{
-dest++;
-/* on bouge dest jusqua la fin */
-}
-while (n > 0 && *src != '\0')
-/* tant que n est superieur a 0 il y a des caracteres a copier */
-/* il ne faut pas depasser src */
-{
-*dest = *src;
-/* = ajoute */
-dest++;
-src++;
-n--;
-/* reduction nombre caractere a copier */
-/* decrementation de n a chaque caractere copie */
-}
 while (n > 0)
 /* on continue dans dest apres src */
 {
-*dest = '\0';
+  if(*src != '\0')
+    {
+      *dest = *src;
+      src++;
+    }
+  else
+    {
+      *dest = '\0';
+    }
 /* on met des caractere nuls car on est parti de src */
 dest++;
 n--;
