@@ -17,7 +17,7 @@ ptr = dest;
 while (*dest != '\0')
 /* tant que dest n'est pas a la fin il avance */ 
 {
-est++;
+dest++;
 }
 while (*src != '\0')
 /* en c = assigne une valeur, donc on copie src dans dest */
