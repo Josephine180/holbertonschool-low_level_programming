@@ -17,19 +17,19 @@ if (*ptr == 'a' || *ptr == 'A')
 {
 *ptr = '4';
 }
-else if (*ptr == 'e' || *ptr == 'E')
+else (*ptr == 'e' || *ptr == 'E')
 {
 *ptr = '3';
 }
-else if (*ptr == 'o' || *ptr == 'O')
+else (*ptr == 'o' || *ptr == 'O')
 {
 *ptr = '0';
 }
-else if (*ptr == 't' || *ptr == 'T')
+else(*ptr == 't' || *ptr == 'T')
 {
 *ptr = '7';
 }
-else if (*ptr == 'l' || *ptr == 'L')
+else (*ptr == 'l' || *ptr == 'L')
 {
 *ptr = '1';
 }
