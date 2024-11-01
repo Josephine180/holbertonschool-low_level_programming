@@ -15,7 +15,7 @@ char  *ptr;
 ptr = dest;
 /* creation pointeur*/
 while (*dest != '\0')
-/* tant que dest n'est pas a la fin il avance */ 
+/* tant que dest n'est pas a la fin il avance */
 {
 dest++;
 }
@@ -27,5 +27,5 @@ dest++;
 src++;
 }
 *dest = '\0';
-return ptr;
+return (ptr);
 }
