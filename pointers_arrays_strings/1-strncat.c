@@ -3,21 +3,21 @@
 #include <string.h>
 
 /**
-* _strncat - the function concatenates two strings and use a max of n octets from src
-* @dest: pointeur destination 
+* _strncat - the function concatenates two strings & n octets from src
+* @dest: pointeur destination
 * @src: pointeur source
 * @n: n bytes to copy from src
 * Return: pointeur on the string dest
 */
 
-char *_strncat(char *dest, char * src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 char  *ptr;
 ptr = dest;
 /* marquer debut de dest */
 while (*dest != '\0')
 {
-dest ++;
+dest++;
 /* on bouge dest jusqua la fin */
 }
 while (n > 0 && *src != '\0')
@@ -33,5 +33,5 @@ n--;
 /* decrementation de n a chaque caractere copie */
 }
 *dest = '\0';
-return(ptr);
+return (ptr);
 }
