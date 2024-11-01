@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
-* _strcat - the function concatenates two strings
+** _strcat - the function concatenates two strings
 * @dest: pointeur destination
 * @src: pointeur source
-* return: pointeur on the string dest
+* Return: pointeur on the string dest
 */
 
 char *_strcat(char *dest, char *src)
