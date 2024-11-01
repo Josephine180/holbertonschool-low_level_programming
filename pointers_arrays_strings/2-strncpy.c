@@ -10,26 +10,16 @@
 * Return: pointeur on the string dest
 */
 
-char *_strncpy(char *dest, char *src, int n)
+
+char *_strcpy(char *dest, char *src)
 {
-char  *ptr;
-ptr = dest;
-while (n > 0)
-/* on continue dans dest apres src */
-{
-  if(*src != '\0')
-    {
-      *dest = *src;
-      src++;
-    }
-  else
-    {
-      *dest = '\0';
-    }
-/* on met des caractere nuls car on est parti de src */
-dest++;
-n--;
-}
-*dest = '\0';
-return (ptr);
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
