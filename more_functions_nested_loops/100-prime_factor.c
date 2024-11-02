@@ -4,7 +4,7 @@
 /**
 * largest_prime_factor - value of factorisation
 * @n: pointers
-* Result: number
+* Return: number
 */
 
 long largest_prime_factor(long n)
