@@ -3,9 +3,6 @@
 
 /**
 * largest_prime_factor - value of factorisation
-* main - main
-* Description: the number
-* Return: Always(0)
 * @n: pointers
 * Return: number
 */
@@ -33,7 +30,14 @@ max_prime = n;
 }
 return (max_prime);
 }
-
+/**
+* main - Entry point of the program
+*
+* Description: This function calculates and prints the largest prime factor
+* of the number 612852475143.
+*
+* Return: Always 0 (Success).
+*/
 int main(void)
 {
 long number = 612852475143;
