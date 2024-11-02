@@ -31,7 +31,7 @@ max_prime = n;
 return (max_prime);
 }
 
-int main()
+int main(void)
 {
 long number = 612852475143;
 long result = largest_prime_factor(number);
