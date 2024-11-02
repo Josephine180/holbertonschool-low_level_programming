@@ -3,6 +3,7 @@
 
 /**
 * largest_prime_factor - value of factorisation
+* main - main
 * @n: pointers
 * Return: number
 */
