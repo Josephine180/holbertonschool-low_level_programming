@@ -1,1 +1,1 @@
-Travail avec les pointeurs 
+On continue de voir les pointeurs et tableaux
