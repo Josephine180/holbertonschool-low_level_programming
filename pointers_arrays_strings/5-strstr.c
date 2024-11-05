@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+* strstr - finds the occurence of needle in haystack
+* @haystack: firt pointer
+* @needle: second pointer
+* Returns: pointer beginning or NULL
+*/
+
+char *_strstr(char *haystack, char *needle)
+{
+/* Cas 1 : si needle est une chaîne vide, retourner haystack */
+if (*needle == '\0')
+{
+return haystack;
+}
+/* Cas 2: si haystack est vide et needle n'est pas vide, retourner NULL */
+if (*haystack == '\0')
+{
+return (NULL);
+}
+for (; *haystack != '\0'; haystack++)
+{
+/* si le premier caractere de haystack correspond au premier caractere de needle */
+if (*haystack == *needle)
+{
+char *h = haystack;
+char *n = needle;
+/* comparer les caracteres de haystack et needle */
+while (*h != '\0' && *n != '\0' && *h == *n)
+{
+h++;
+n++;
+}
+/* si correspondance */
+if (*n == '\0')
+{
+return (haystack);
+}
+}
+}
+return (NULL);
+}
+
