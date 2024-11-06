@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 /* Cas 1 : si needle est une chaîne vide, retourner haystack */
 if (*needle == '\0')
 {
-return haystack;
+return (NULL);
 }
 /* Cas 2: si haystack est vide et needle n'est pas vide, retourner NULL */
 if (*haystack == '\0')
