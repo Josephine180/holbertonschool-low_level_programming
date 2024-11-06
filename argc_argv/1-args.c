@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - entry point
 * @argc: first parametre
 * @argv: second parametre
-* REturn: 0 success
+* Return: 0 success
 */
 
 int main(int argc, char *argv[])
