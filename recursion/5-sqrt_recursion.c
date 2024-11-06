@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
  * _sqrt_recursion_helper - helper
  * @n: 1 parametre
  * @x: parametre comparaison
@@ -20,6 +19,13 @@ return (-1);
 /* on appelle recursivement */
 return (_sqrt_recursion_helper(n, x + 1));
 }
+
+/**
+ * _sqrt_recursion - Return the natural square root of a number.
+ * @n: The number we want to find the square root of.
+ * Return: The square root if it exists, or -1 if it does not.
+ */
+
 int _sqrt_recursion(int n)
 {
 if (n < 0)
