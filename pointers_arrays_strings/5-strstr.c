@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* strstr - finds the occurence of needle in haystack
+* *_strstr - finds the occurence of needle in haystack
 * @haystack: firt pointer
 * @needle: second pointer
 * Returns: pointer beginning or NULL
@@ -20,9 +20,10 @@ if (*haystack == '\0')
 {
 return (NULL);
 }
-for (; *haystack != '\0'; haystack++)
+while (*haystack != '\0')
 {
-/* si le premier caractere de haystack correspond au premier caractere de needle */
+haystack++;
+/* premier caractere de haystack au premier caractere de needle */
 if (*haystack == *needle)
 {
 char *h = haystack;
