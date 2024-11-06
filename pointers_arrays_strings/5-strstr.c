@@ -5,7 +5,7 @@
 * *_strstr - finds the occurence of needle in haystack
 * @haystack: firt pointer
 * @needle: second pointer
-* Returns: pointer beginning or NULL
+* Return: pointer beginning or NULL
 */
 
 char *_strstr(char *haystack, char *needle)
