@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main- Entry point
+* main - Entry point
 * @argc: first parametre
 * @argv: second parametre
 * REturn: 0 success
