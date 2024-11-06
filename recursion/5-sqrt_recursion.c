@@ -5,6 +5,7 @@
  * _sqrt_recursion - returns the natural square root of a number
  * _sqrt_recursion_helper - helper
  * @n: 1 parametre
+ * @x: parametre comparaison
  * Return: if n have a natural square -1
  */
 
