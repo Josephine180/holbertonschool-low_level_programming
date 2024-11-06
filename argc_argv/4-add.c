@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include <stdlb.h>
+#include <stdlib.h>
 /**
 * main - entry point
 * @argc: parametre premier
