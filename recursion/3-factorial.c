@@ -5,7 +5,7 @@
 /**
 * factorial - gives the factorial of a given number
 * @n: parametre
-* Result: n inferior a 0 donc -1
+* Return: n inferior a 0 donc -1
 */
 
 int factorial(int n)
