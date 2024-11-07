@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* *_memset - function fills with memory
+* _memset - function fills with memory
 * @s: pointer
 * @b: value
 * @n: value
