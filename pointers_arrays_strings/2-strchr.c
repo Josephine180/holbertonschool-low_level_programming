@@ -1,8 +1,9 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
-* *_strchr - locates a character in a string
+* _strchr - locates a character in a string
 * @s: pointer
 * @c: parameter
 * Return: c or null
