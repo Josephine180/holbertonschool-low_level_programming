@@ -19,5 +19,5 @@ while (s < ptr + n)
 *s = b;
 s++;
 }
-return (s);
+return (ptr);
 }
