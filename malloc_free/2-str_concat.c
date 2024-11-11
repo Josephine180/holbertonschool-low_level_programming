@@ -35,5 +35,6 @@ strcpy(result, s1);
 /* on copie la chaine s1 dans la memoire allouée */
 strcat(result, s2);
 /* ajoute chaine S2 a la fin*/
+result[len1 + len2]='\0';
 return (result);
 }
