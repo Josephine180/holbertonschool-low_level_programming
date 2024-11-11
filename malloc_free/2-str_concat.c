@@ -17,10 +17,10 @@ char *result;
 int len1, len2;
 /*variables pr stocker longueur chaines*/
 if (s1 == NULL)
-return (NULL);
+s1 = "";
 /*treat as empty string */
 if (s2 == NULL)
-return (NULL);
+s2 = "";
 /* treat as empty string */
 len1 = strlen(s1);
 /*calcule longueur chaine s1*/
