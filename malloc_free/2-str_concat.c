@@ -26,15 +26,15 @@ len1 = strlen(s1);
 /*calcule longueur chaine s1*/
 len2 = strlen(s2);
 /*calcule longueur chaine s2*/
-result = malloc(sizeof(char) * (len1 + len2 + 1));
-/* allouer memoire pr stsocker chaine resultante */
+result = malloc(((len1 + len2) + 1) * sizeof(char));
+/* allouer memoire pr stsocker chaine resultante*/
 if (result == NULL)
 /*verifie si malloc echoue */
+{
 return (NULL);
-strcpy(result, s1);
-/* on copie la chaine s1 dans la memoire allouée */
-strcat(result, s2);
-/* ajoute chaine S2 a la fin*/
-result[len1 + len2]='\0';
-return (result);
+}
+strncat(result, s1,len1);
+strncat(result, s2, len2);
+result += '\0';
+return(result);
 }
