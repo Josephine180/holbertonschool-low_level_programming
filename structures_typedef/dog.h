@@ -9,6 +9,7 @@ typedef struct dog dog_t;
  *
  * Structure containing all of the dog(s) information
  */
+
 struct dog
 {
 	char *name;
