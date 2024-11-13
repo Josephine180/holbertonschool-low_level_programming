@@ -4,9 +4,6 @@
 /**
  * print_dog - Print une variable de type struct dog
  * @d: Pointeur vers la structure à initialiser
- * @name: Nom du chien
- * @age: Âge du chien
- * @owner: Propriétaire du chien
  *
  * Retour: Rien (void)
  */
