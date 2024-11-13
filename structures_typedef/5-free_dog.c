@@ -10,18 +10,15 @@
  */
 void free_dog(dog_t *d)
 {
-    if (d == NULL)
+if (d == NULL)
 /* If the pointer is NULL, do nothing */
-        return;
-
-    /* Free the dynamically allocated name if it exists */
-    if (d->name != NULL)
-        free(d->name);
-
-    /* Free the dynamically allocated owner if it exists */
-    if (d->owner != NULL)
-        free(d->owner);
-
-    /* Finally, free the memory for the dog structure itself */
-    free(d);
+return;
+/* Free the dynamically allocated name if it exists */
+if (d->name != NULL)
+free(d->name);
+/* Free the dynamically allocated owner if it exists */
+if (d->owner != NULL)
+free(d->owner);
+/* Finally, free the memory for the dog structure itself */
+free(d);
 }
