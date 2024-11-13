@@ -1,15 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-/**
-* str_concat - concacts two strings
-* @s1: first parameters
-* @s2: second parameters
-* Return: addition
-*/
-
-#include "main.h"
 #include <stdlib.h>
 /**
  * str_concat - concaténation string
