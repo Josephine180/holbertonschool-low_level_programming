@@ -28,8 +28,7 @@ if (n >= len2)
 n = len2;
 /* si n >S2 on copie pas de caractere en + */
 /*on veut pas dépasser s2 */
-
-result = malloc(((len1 + len2) +1) * sizeof(char));
+result = malloc(((len1 + len2) + 1) * sizeof(char));
 if (result == NULL)
 /*verifie si malloc echoue */
 {
