@@ -9,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-int a = 0, i = 1;
+int a = 0, i = 0;
 char *s;
 if (str == NULL)
 /* str est null donc on retourne null */
@@ -19,7 +19,7 @@ while (str[i])
 {
 i++;
 }
-s = malloc((sizeof(char) * 1) + 1);
+s = malloc(sizeof(char) * 1 + 1);
 /* alloue la memoire pour la chaine */
 if (s == NULL)
 return (NULL);
@@ -29,6 +29,6 @@ while (a < i)
 s[a] = str[a];
 a++;
 }
-s[a] = '\0';
+s[i] = '\0';
 return (s);
 }
