@@ -19,8 +19,10 @@ unsigned int len2;
 /*variables qui stocke les longueurs */
 unsigned int i, j;
 /* copient caracteres dans string */
-len1 = strlen(s1);
-len2 = strlen(s2);
+for (len1 = 0; s1[len1] != '\0'; len1++)
+{}
+for (len2 = 0; s2[len2] != '\0'; len2++)
+{}
 /* renvoie longueur de la string 1 et 2 */
 if (n >= len2)
 n = len2;
