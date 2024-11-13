@@ -1,13 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
-
-typedef struct dog_t
-{
-char *name;
-float age;
-char *owner;
-};
+#include <stdlib.h>
 
 /**
 * new_dog - create a new dog
@@ -19,42 +12,26 @@ char *owner;
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *new_dog;
-/* pointer on new dog*/
-new_dog =malloc(sizeof(dog_t));
-/* allocate memory for new dog */
-if (new_dog == NULL)
+int nlen, olen, i;
+dog_t *doggy;
+nlen = olen = 0;
+while (name[nlen++])
+;
+while (owner[olen++])
+;
+doggy = malloc(sizeof(dog_t));
+if (doggy == NULL)
 return (NULL);
-/* return si c'est fail */
-/* allocate and cpy the string*/
-if (name != NULL)
-{
-new_dog->name = strdup(name);
-/* strdup allocates memory */
-if (new_dog->name == NULL)
-{
-free(new_dog);
+doggy->name = malloc(nlen * sizeof(doggy->name));
+if (doggy == NULL)
 return (NULL);
-}
-}
-else
-{
-new_dog->name = NULL;
-}
-new_dog->age = age;
-if (owner != NULL)
-{
-new_dog->owner = strdup(owner);
-if (new_dog->owner == NULL)
-{
-free(new_dog->name);
-free(new_dog);
+for (i = 0; i < nlen; i++)
+doggy->name[i] = name[i];
+doggy->age = age;
+doggy->owner = malloc(olen * sizeof(doggy->owner));
+if (doggy == NULL)
 return (NULL);
-}
-}
-else
-{
-new_dog->owner = NULL;
-}
-return (new_dog);
+for (i = 0; i < olen; i++)
+doggy->owner[i] = owner[i];
+return (doggy);
 }
