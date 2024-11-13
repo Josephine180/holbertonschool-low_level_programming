@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
 * string_nconcat - add two strings
