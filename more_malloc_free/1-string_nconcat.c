@@ -1,47 +1,38 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
-
 /**
-* string_nconcat - add two strings
-* @s1: string to cat
-* @s2: string to cat
-* @n: taille elt
-* Return: pointer to string or null if failure
-*/
-
+ * string_nconcat - concaténation string avec limitation
+ * @s1: string à concaténer
+ * @s2: string à concaténer
+ * @n: limitation caractère
+ * Return: pointeur concaténation
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *result;
-/* pointeur */
-unsigned int len1;
-unsigned int len2;
-/*variables qui stocke les longueurs */
-unsigned int i, j;
-/* copient caracteres dans string */
-for (len1 = 0; s1[len1] != '\0'; len1++)
-{}
-for (len2 = 0; s2[len2] != '\0'; len2++)
-{}
-/* renvoie longueur de la string 1 et 2 */
-if (n >= len2)
-n = len2;
-/* si n >S2 on copie pas de caractere en + */
-/*on veut pas dépasser s2 */
-result = malloc(((len1 + len2) + 1) * sizeof(char));
-if (result == NULL)
-/*verifie si malloc echoue */
-{
-return (NULL);
-}
-for (i = 0; i < len1; i++)
-result[i] = s1[i];
-/* on parcourt tout s1 */
-/* on copie tt dans result */
-/* jusqu'a la fin de s1 */
-/* i parcourt s1 et est copié a la mm position ds result */
-for (j = 0; j < n; j++)
-result[i + j] = s2[j];
-result[i + j] = '\0';
-return (result);
+char *s_cnct; /* pointeur allocation mémoire concaténation */
+unsigned int i, j; /* index boucle concaténation */
+unsigned int len_i = 0, len_j = 0; /* stockage longueur s1, s2 */
+if (s1 == NULL)
+s1 = ""; /* considéré comme chaîne vide */
+if (s2 == NULL)
+s2 = ""; /* considéré comme chaîne vide */
+while (s1[len_i] != '\0')
+len_i++;
+while (s2[len_j] != '\0')
+len_j++;
+/* boucles while, calcul longueur string */
+if (n >= len_j) /* vérification n supérieur ou égal*/
+n = len_j; /* si condition vrai mettre toute la string*/
+s_cnct = malloc((len_i + n + 1) * sizeof(char));
+/*  allocation mémoire concaténation */
+/* len_i + n + 1 = total taille mémoire */
+if (s_cnct == NULL) /* vérification échec malloc */
+return (NULL); /* échec malloc */
+for (i = 0; i < len_i; i++)
+s_cnct[i] = s1[i]; /* copie caractère s1 dans s_cnct */
+for (j = 0; j < n; j++) /* copie n caractères */
+s_cnct[i + j] = s2[j]; /* copie caractère s2 dans s_cnct */
+s_cnct[i + j] = '\0';
+/* ajout caractère NULL -> fin de la chaîne */
+return (s_cnct);
 }
