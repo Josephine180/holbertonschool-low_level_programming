@@ -9,31 +9,40 @@
 * Return: addition
 */
 
+#include "main.h"
+#include <stdlib.h>
+/**
+ * str_concat - concaténation string
+ * @s1: string à concaténer
+ * @s2: string à concaténer
+ * Return: poiteur concaténation
+ */
 char *str_concat(char *s1, char *s2)
 {
-char *result;
-/* declaration pointeur chaine concatenée*/
-int len1, len2;
-/*variables pr stocker longueur chaines*/
+char *s_cnct; /* pointeur allocation mémoire concaténation */
+int i, j; /* index boucle concaténation */
+int len_i = 0, len_j = 0; /* stockage longueur s1, s2 */
 if (s1 == NULL)
-s1 = "";
-/*treat as empty string */
+s1 = ""; /* considéré comme chaîne vide */
 if (s2 == NULL)
-s2 = "";
-/* treat as empty string */
-len1 = strlen(s1);
-/*calcule longueur chaine s1*/
-len2 = strlen(s2);
-/*calcule longueur chaine s2*/
-result = malloc(((len1 + len2) + 1) * sizeof(char));
-/* allouer memoire pr stsocker chaine resultante*/
-if (result == NULL)
-/*verifie si malloc echoue */
-{
-return (NULL);
-}
-strncat(result, s1,len1);
-strncat(result, s2, len2);
-result += '\0';
-return(result);
+s2 = ""; /* considéré comme chaîne vide */
+while (s1[len_i] != '\0')
+len_i++;
+while (s2[len_j] != '\0')
+len_j++;
+/* boucles while, calcul longueur string */
+s_cnct = malloc((len_i + len_j + 1) * sizeof(char));
+/*  allocation mémoire concaténation */
+/* len_i/j + 1 = inclure espace pour '\0' */
+if (s_cnct == NULL) /* vérification échec malloc */
+return (NULL); /* échec malloc */
+for (i = 0; i < len_i; i++)
+s_cnct[i] = s1[i];
+/* copie caractère s1 dans s_cnct */
+for (j = 0; j < len_j; j++)
+s_cnct[i + j] = s2[j];
+/* copie caractère s2 dans s_cnct */
+s_cnct[i + j] = '\0';
+/* ajout caractère NULL -> fin de la chaîne */
+return (s_cnct);
 }
