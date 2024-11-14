@@ -1,7 +1,40 @@
 #include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
+#include "main.h"
+#include <stdlib.h>
 
+/**
+* _strdup - renvoi un pointeur sur nouvelle chaine
+* @str: string
+* Return: Null si str null, oui pointers
+*/
+
+char *_strdup(char *str)
+{
+int a = 0, i = 0;
+char *s;
+if (str == NULL)
+/* str est null donc on retourne null */
+return (NULL);
+while (str[i])
+/* on compte la longueur de la chaine */
+{
+i++;
+}
+s = malloc((sizeof(char) * i) +1);
+/* alloue la memoire pour la chaine */
+if (s == NULL)
+return (NULL);
+while (a < i)
+/* copie la memoire la chaine allouée */
+{
+s[a] = str[a];
+a++;
+}
+s[i] = '\0';
+return (s);
+}
 /**
 * new_dog - create a new dog
 * @name: name of the dog
@@ -12,26 +45,31 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int nlen, olen, i;
-dog_t *doggy;
-nlen = olen = 0;
-while (name[nlen++])
-;
-while (owner[olen++])
-;
-doggy = malloc(sizeof(dog_t));
-if (doggy == NULL)
+dog_t *dog;
+/* creation structure dog pour dogt_t*/
+/* lié par dog.h */
+dog = malloc(sizeof(dog_t));
+/* on cherche la mémoire pour dog_t*/
+if (dog == NULL)
+{
 return (NULL);
-doggy->name = malloc(nlen *sizeof(doggy->name));
-if (doggy == NULL)
+}
+/*on verifie malloc */
+dog->name = _strdup(name);
+/*on verifie malloc */
+if (dog->name == NULL)
+{
 return (NULL);
-for (i = 0; i < nlen; i++)
-doggy->name[i] = name[i];
-doggy->age = age;
-doggy->owner = malloc(olen * sizeof(doggy->owner));
-if (doggy == NULL)
+free(dog);
 return (NULL);
-for (i = 0; i < olen; i++)
-doggy->owner[i] = owner[i];
-return (doggy);
+}
+dog->owner = _strdup(owner);
+if (dog->owner == NULL)
+{
+free(dog->name);
+free(dog);
+return (NULL);
+}
+dog->age = age;
+return (dog);
 }
