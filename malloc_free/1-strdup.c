@@ -19,7 +19,7 @@ while (str[i])
 {
 i++;
 }
-s = malloc(sizeof(char) * 1 + 1);
+s = malloc((sizeof(char) * i) +1);
 /* alloue la memoire pour la chaine */
 if (s == NULL)
 return (NULL);
