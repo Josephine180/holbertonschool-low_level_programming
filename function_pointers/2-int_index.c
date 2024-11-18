@@ -24,10 +24,6 @@ if (cmp == NULL)
 {
 return (-1);
 }
-if (array == NULL)
-{
-return (-1);
-}
 /* boucle pour faire l'array et faire la comparaison */
 for (i = 0; i < size; i++)
 /* si ca retourne pas 0 on trouve un match */
