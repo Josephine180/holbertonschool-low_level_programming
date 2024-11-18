@@ -2,9 +2,9 @@
 #include "function_pointers.h"
 
 /**
-* print-name - print a name
-* @name - parametre premiere fonction
-* @f - pointeur vers fonction
+* print_name - print a name
+* @name: parametre premiere fonction
+* @f: pointeur vers fonction
 * Return: nothing
 */
 
