@@ -15,13 +15,14 @@ unsigned int i;
 va_list args;
 if (n == 0)
 {
-printf ("n\");
+printf("\n");
 return;
 }
 va_start(args,n);
 printf("%d", va_arg(args,int));
 for (i = 1; i < n; i++)
-if (separator != NULL)
+{
+if (i > 0 && separator != NULL)
 {
 printf("%s", separator);
 }
