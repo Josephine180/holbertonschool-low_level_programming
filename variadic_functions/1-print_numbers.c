@@ -19,10 +19,12 @@ printf("\n");
 return;
 }
 va_start(args,n);
+if (n > 0)
+{
 printf("%d", va_arg(args,int));
 for (i = 1; i < n; i++)
 {
-if (i > 0 && separator != NULL)
+if (separator != NULL)
 {
 printf("%s", separator);
 }
