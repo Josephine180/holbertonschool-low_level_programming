@@ -15,7 +15,7 @@ unsigned int i;
 va_list args;
 if (n == 0)
 {
-_putchar("\n");
+printf("\n");
 return;
 }
 va_start(args,n);
@@ -29,5 +29,5 @@ printf("%s", separator);
 printf("%d",va_arg(args,int));
 }
 va_end(args);
-_putchar("\n");
+printf("\n");
 }
