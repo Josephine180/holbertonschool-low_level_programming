@@ -18,17 +18,17 @@ if (n == 0)
 printf("\n");
 return;
 }
-va_start(args,n);
+va_start(args, n);
 if (n > 0)
 {
-printf("%d", va_arg(args,int));
+printf("%d", va_arg(args, int));
 for (i = 1; i < n; i++)
 {
 if (separator != NULL)
 {
 printf("%s", separator);
 }
-printf("%d",va_arg(args,int));
+printf("%d", va_arg(args, int));
 }
 va_end(args);
 printf("\n");
