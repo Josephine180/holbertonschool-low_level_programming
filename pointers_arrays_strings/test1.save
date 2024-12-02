@@ -1,0 +1,8 @@
+int _strlen(char *s)
+{
+	char *ptr = s;
+
+	for (; *ptr; ptr++)
+		;
+	return (ptr - s);
+}
