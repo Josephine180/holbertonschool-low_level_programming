@@ -10,18 +10,30 @@
 
 size_t print_list(const list_t *h)
 {
-size_t count = 0;/* initialisation compteur */
-if (h == NULL)/* si pointeur nul, liste vide */
+size_t count = 0;
+size_t len = 0;
+const list_t *current = h;
+if (current == NULL)
 {
-printf("[0] (nil)\n");/* on imprime ça si la liste est vide */
-return (0);/*retourne 0 car aucune elt à afficher */
+return (count);
 }
-while (h)/* tant que h != 0 */
+while (current != NULL)
 {
-printf("[%u] %s\n", h->len, h->str);/* affiche la longueur */
-/* et la chaine du noeud actuel */
-count++;/*incrémenter le compteur de nodes */
-h = h->next;/* passe au node suivant */
+if (current->str == NULL)
+{
+printf("[0] (nil)\n");
 }
-return (count);/* retourne le nombre total de nodes */
+else
+{
+len = 0;
+while (current->str[len] != '\0')
+{
+len++;
+}
+printf("[%lu] %s\n", len, current->str);
+}
+current = current->next;
+count++;
+}
+return (count);
 }
