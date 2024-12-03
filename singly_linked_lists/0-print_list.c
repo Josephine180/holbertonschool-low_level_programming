@@ -20,8 +20,8 @@ while (h)/* tant que h != 0 */
 {
 printf("[%u] %s\n", h->len, h->str);/* affiche la longueur */
 /* et la chaine du noeud actuel */
-h = h->next;/* passe au node suivant */
 count++;/*incrémenter le compteur de nodes */
+h = h->next;/* passe au node suivant */
 }
 return (count);/* retourne le nombre total de nodes */
 }
