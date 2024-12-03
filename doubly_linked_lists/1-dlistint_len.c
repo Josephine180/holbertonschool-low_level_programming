@@ -15,7 +15,7 @@ size_t count = 0;
 while (current != NULL)
 {
 count++;
-curent = current->next; /* on incremente l'adress memoire */
+current = current->next; /* on incremente l'adress memoire */
 }
 return (count);
 }
