@@ -32,8 +32,8 @@ len++;
 }
 printf("[%lu] %s\n", len, current->str);
 }
-current = current->next;
 count++;
+current = current->next;
 }
 return (count);
 }
