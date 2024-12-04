@@ -12,20 +12,24 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 dlistint_t *current = *head;
 unsigned int i = 0;
 while (*head == NULL)
+/* verification liste vide */
 return (-1);
 if (index == 0)
+/* on supprime si c'est en en-tête de liste */
 {
-*head = current->next;
-if (current->next)
+*head = current->next;/* deplace le noeud vers le deuxieme noeud */
+if (current->next) /* si la liste n'a pas qu'un elt */
 current->next->prev = NULL;
-free(current);
+free(current);/* on libere l'ancien premier noeud */
 return (1);
 }
 while (current != NULL && i < index)
+/* tant que current n'est pas egal a 0 et i dans index */
 {
 current = current->next;
 i++;
 }
+/* mise à jour des ptr pr supprimer le noeud au milieu ou fin */
 if (current == NULL)
 return (-1);
 if (current->prev != NULL)
