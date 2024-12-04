@@ -18,7 +18,7 @@ if (index == 0)
 *head = current->next;
 if (current->next)
 current->next->prev = NULL;
-free (current);
+free(current);
 return (1);
 }
 while (current != NULL && i < index)

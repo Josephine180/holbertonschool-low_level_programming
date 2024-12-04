@@ -14,8 +14,8 @@ dlistint_t *current = *h; /* pointeur qui parcourt la liste */
 dlistint_t *new_node;/*pointeur adresse memoire nouveau node */
 unsigned int i = 0;/*variable de type compteur pour index*/
 if (idx == 0) /* si index 0 , inserer node en tete de liste */
-return add_dnodeint(h, n);
-while (current != NULL && i < idx-1)
+return (add_dnodeint(h, n));
+while (current != NULL && i < idx - 1)
 /* tant que current pas nul et i pas à la fin de l'index */
 {
 current = current->next; /* on avance au noeud suivant */
@@ -23,7 +23,7 @@ i++;
 }
 if (current == NULL)
 return (NULL);/*index plus grand que la liste donc null */
-new_node =malloc(sizeof(dlistint_t));
+new_node = malloc(sizeof(dlistint_t));
 /* on alloue de la mémoire */
 if (new_node == NULL) /*gestion risque si ca échoue */
 return (NULL);
