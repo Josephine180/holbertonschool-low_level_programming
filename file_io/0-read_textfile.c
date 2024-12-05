@@ -7,7 +7,7 @@
 * @filename: files we must print
 * @letters: number of caracters to print
 * Return: number of letters to print
-or 0 if it failed, if it's NULL
+* or 0 if it failed, if it's NULL
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -23,7 +23,7 @@ return (0);
 /* verification s'il existe */
 fd = open(filename, O_RDONLY);
 /* ouvrir son fichier pr connaitre fd, permission */
-buffer = malloc(sizeof(char *)* letters);
+buffer = malloc(sizeof(char *) * letters);
 if (buffer == NULL)
 return (0);
 if (fd == -1)
