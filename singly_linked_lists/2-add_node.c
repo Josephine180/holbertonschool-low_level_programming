@@ -17,10 +17,11 @@ return (NULL);
 temp->str = strdup(str); /* on duplique str */
 if (temp->str == NULL) /* Check if strdup failed */
 {
+free(temp);
 return (NULL);
 }
 for (nlen = 0; str[nlen]; nlen++) /* calcule la longueur de la chaîne */
-temp->nlen = len; /* on affecte la longueur au node */
+temp->len = nlen; /* on affecte la longueur au node */
 temp->next = *head; /* le node suivant est nul car c'est le dernier node */
 *head = temp; /* on commence par le début */
 return (*head);
