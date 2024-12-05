@@ -20,7 +20,7 @@ if (temp->str == NULL) /* Check if strdup failed */
 return (NULL);
 }
 for (nlen = 0; str[nlen]; nlen++) /* calcule la longueur de la chaîne */
-temp->len = nlen; /* on affecte la longueur au node */
+temp->nlen = nlen; /* on affecte la longueur au node */
 temp->next = *head; /* le node suivant est nul car c'est le dernier node */
 *head = temp; /* on commence par le début */
 return (*head);
