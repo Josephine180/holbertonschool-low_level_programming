@@ -1,4 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+
+#define BUFFER_SIZE 1024
 
 /**
 * main - entry point
